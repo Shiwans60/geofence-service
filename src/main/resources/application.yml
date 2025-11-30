@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: geofence
+
+  data:
+    mongodb:
+      uri: mongodb+srv://shiwansait:password@cluster0.tdga3ht.mongodb.net/?appName=Cluster0
+      database: geofence
+
+  server:
+    port: 8080
+
+  logging:
+    level:
+      root: INFO
+      com.example.geofence: DEBUG
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
+    endpoint:
+      health:
+        show-details: always
